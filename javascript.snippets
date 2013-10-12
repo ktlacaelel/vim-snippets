@@ -22,10 +22,12 @@ snippet require('${1:file}');
 	${2}
 # Neon Class
 snippet Class
-	Class('${1:`Camelize(Filename())`}')${2}({
+	Class('${1:`Camelize(Filename())`}')({
 
 		prototype : {
-			${3}
+
+			${2}
+
 		}
 
 	});
