@@ -1,0 +1,51 @@
+# rfc
+snippet rfc
+	<?xml version="1.0" encoding="UTF-8"?>
+	<?rfc linefile="1:xml/complete/rfc${1:number}.xml"?>
+	<?rfc toc="yes"?>
+
+	<!DOCTYPE rfc PUBLIC "" "rfc${1}.dtd">
+
+	<rfc number="${1}" obsoletes="" submissionType="IETF" updates="" category="info">
+
+	<front>
+
+		<title>${2:title}</title>
+
+		<author initials="K.T." surname="Kazuyoshi" fullname="Kanazawa Kazuyoshi Tlacaelel">
+			<organization>Freshout.</organization>
+			<address>
+				<postal>
+					<street>Miguel de Cervantes y Saavedra 118A</street>
+					<city>Guadalajara</city> <region>Jalisco</region> <code>44150</code>
+					<country>Mexico</country>
+				</postal>
+				<phone>+52 3331 5966 92</phone>
+				<email>kazu.dev@gmail.com</email>
+				<uri>http://ktlacaelel.info/</uri>
+			</address>
+		</author>
+		<date month="${3:April}" year="${4:214}"/>
+		<area>${5:HTTP}</area>
+		<keyword>${6:keyword}</keyword>
+		<abstract>
+			<t>
+				${7:memo}
+			</t>
+		</abstract>
+
+	</front>
+
+		<middle>
+		</middle>
+
+		<back>
+		</back>
+
+	</rfc>
+snippet she
+	#!/usr/bin/env ${1:ruby}
+
+	${2:}
+
+
